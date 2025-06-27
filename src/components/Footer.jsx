@@ -1,39 +1,10 @@
-import React from "react";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaBehance,
-  FaDribbble,
-} from "react-icons/fa";
+// src/components/Footer.jsx
+import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#2e0055] text-white py-10 px-8">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-        {/* Left Side */}
-        <div className="mb-6 md:mb-0 text-center md:text-left">
-          <h3 className="text-xl font-bold">Fatima Azhar</h3>
-          <p className="text-sm text-gray-400 mt-2">
-            © {new Date().getFullYear()} All rights reserved.
-          </p>
-        </div>
-
-        {/* Social Icons */}
-        <div className="flex space-x-6 text-xl text-pink-400">
-          <a href="#" className="hover:text-white transition">
-            <FaLinkedin />
-          </a>
-          <a href="#" className="hover:text-white transition">
-            <FaGithub />
-          </a>
-          <a href="#" className="hover:text-white transition">
-            <FaBehance />
-          </a>
-          <a href="#" className="hover:text-white transition">
-            <FaDribbble />
-          </a>
-        </div>
-      </div>
+    <footer className="bg-gray-100 py-6 text-center text-gray-600">
+      <p>&copy; {new Date().getFullYear()} Fatima Azhar. All rights reserved.</p>
     </footer>
   );
 };
